@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Taft Tower Talk </title>
+        <link rel="icon" type="image/x-icon" href="logo.png">
+        <link rel="stylesheet" type="text/css" media="all" href="base-css.css">
+        <link rel="stylesheet" type="text/css" href="condolist.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+        <script src="condolist.js"></script>
+    </head>
+    <body>
+         <!-- NAVIGATION BAR -->
+         <div id="navbar-visitor">
+            <a href="homepage-visitor.html"><img src="logo.png" alt="logo" width="100px"/></a>
+            <div id="searchbar">
+                <input type="text" placeholder="Search...">
+            </div>
+            <div id="navbar-links">
+                <a href="#">About</a>
+                <a href="#">Condo List</a>
+                <div class="dropdown">
+                <a href="#">Welcome Back, User</a>
+                <div class="dropdown-content">
+                    <a href="#">Profile</a>
+                    <a href="homepage-visitor.html">Logout</a>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <!-- NAVIGATION BAR -->
+
+        <!-- CONDO LIST-->
+        <div class="condolist-main-body">
+            <div class="Upper-part">
+                <div class="upper-title">
+                    <h1>Recommended Condominiums of the Week </h1>
+                </div>
+
+                <div class="condo-list">
+                    <div class="recommended-condo" id="condo1">
+                        <div class="picture">
+                            <a href="#"><img src="condopics/onearchers.jpg"></a>
+                        </div>
+                        <div class="description">
+                            <span style="font-weight: bold;"> Name:</span> One Archer's Place<br>
+                            <span style="font-weight: bold;"> Rating:</span> 4.8/5<br>
+                            <span style="font-weight: bold;"> Budget:</span> 12,000 to 24,000<br>
+                        </div>
+                    </div>
+                    <div class="recommended-condo" id="condo2">
+                        <div class="picture">
+                            <a href=""><img src="condopics/manilaresidences.jpg"></a>
+                        </div>
+                        <div class="description">
+                            <span style="font-weight: bold;">Name:</span> The Manila Residences<br>
+                            <span style="font-weight: bold;"> Rating:</span> 4.5/5<br>
+                            <span style="font-weight: bold;"> Budget:</span> 14,000 to 30,000<br>
+                        </div>
+                    </div>
+                    <div class="recommended-condo" id="condo3">
+                        <div class="picture">
+                            <a href=""><img src="condopics/whtaft.png"></a>
+                        </div>
+                        <div class="description">
+                            <span style="font-weight: bold;"> Name:</span> WH Taft Residences<br>
+                            <span style="font-weight: bold;"> Rating:</span> 4.5/5<br>
+                            <span style="font-weight: bold;"> Budget:</span> 18,000 to 34,000<br>
+                        </div>
+                    </div>
+                    <div class="recommended-condo" id="condo4">
+                        <div class="picture">
+                            <a href=""><img src="condopics/studiozen.jpg"></a>
+                        </div>
+                        <div class="description">
+                            <span style="font-weight: bold;"> Name:</span> Sudio Zen<br>
+                            <span style="font-weight: bold;"> Rating:</span> 4.5/5<br>
+                            <span style="font-weight: bold;"> Budget:</span> 16,000 to 30,000<br>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <hr>
+            <div class="lower-part">
+                <h1>List of Condominiums</h1>
+                <div id="sort-by">
+                    SORT BY...
+                    <div class="dropdown-content" id="sort-condo">
+                        <div id="Sort-by-rating">Sort by Ratings</div>
+                        <div id="Sort-by-budget">Sort by Budget</div>
+                    </div>
+                </div>
+                <div class="condo-list" id="condo-sorting">
+                    <div class="recommended-condo" id="condo3">
+                        <div class="picture">
+                            <a href=""><img src="condopics/whtaft.png"></a>
+                        </div>
+                        <div class="description">
+                            <span style="font-weight: bold;"> Name:</span> WH Taft Residences<br>
+                            <span style="font-weight: bold;"> Rating:</span> 4.5/5<br>
+                            <span class="budget" id="b1834" style="font-weight: bold;"> Budget:</span> 18,000 to 34,000<br>
+                        </div>
+                    </div>
+                    <div class="recommended-condo" id="condo1">
+                        <div class="picture">
+                            <a href="#"><img src="condopics/onearchers.jpg"></a>
+                        </div>
+                        <div class="description">
+                            <span style="font-weight: bold;"> Name:</span> One Archer's Place<br>
+                            <span style="font-weight: bold;"> Rating:</span> 4.8/5<br>
+                            <span class="budget" id="b1224" style="font-weight: bold;"> Budget:</span> 12,000 to 24,000<br>
+                        </div>
+                    </div>
+                    <div class="recommended-condo" id="condo5">
+                        <div class="picture">
+                            <a href=""><img src="condopics/greenresidence.jpg"></a>
+                        </div>
+                        <div class="description">
+                            <span style="font-weight: bold;"> Name:</span> Green Residences<br>
+                            <span style="font-weight: bold;"> Rating:</span> 4.2/5<br>
+                            <span class="budget" id="b1634" style="font-weight: bold;"> Budget:</span> 16,000 to 34,000<br>
+                        </div>
+                    </div>
+                    <div class="recommended-condo" id="condo2">
+                        <div class="picture">
+                            <a href=""><img src="condopics/manilaresidences.jpg"></a>
+                        </div>
+                        <div class="description">
+                            <span style="font-weight: bold;">Name:</span> The Manila Residences<br>
+                            <span style="font-weight: bold;"> Rating:</span> 4.5/5<br>
+                            <span class="budget" id="b1430" style="font-weight: bold;"> Budget:</span> 14,000 to 30,000<br>
+                        </div>
+                    </div>
+                    <div class="recommended-condo" id="condo4">
+                        <div class="picture">
+                            <a href=""><img src="condopics/studiozen.jpg"></a>
+                        </div>
+                        <div class="description">
+                            <span style="font-weight: bold;"> Name:</span> Sudio Zen<br>
+                            <span style="font-weight: bold;"> Rating:</span> 4.5/5<br>
+                            <span class="budget" id="b1630" style="font-weight: bold;"> Budget:</span> 16,000 to 30,000<br>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- CONDO LIST-->
+        
+    </body>
+</html>
